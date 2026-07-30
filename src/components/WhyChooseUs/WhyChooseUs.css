@@ -1,0 +1,54 @@
+.why-us-section {
+  padding: 6rem 0;
+  background: var(--bg-surface);
+  position: relative;
+}
+
+.pillars-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+.pillar-card {
+  padding: 2.25rem 1.75rem;
+  transition: var(--transition-smooth);
+  position: relative;
+}
+
+.pillar-card:hover {
+  transform: translateY(-5px);
+}
+
+.pillar-icon-box {
+  width: 58px;
+  height: 58px;
+  border-radius: var(--radius-md);
+  background: linear-gradient(135deg, rgba(212, 163, 89, 0.2) 0%, rgba(212, 163, 89, 0.05) 100%);
+  border: 1px solid var(--border-light);
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  transition: var(--transition-smooth);
+}
+
+.pillar-card:hover .pillar-icon-box {
+  background: var(--primary);
+  color: #0c0806;
+  box-shadow: 0 0 20px var(--primary-glow);
+}
+
+.pillar-title {
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  color: var(--text-main);
+}
+
+.pillar-desc {
+  font-size: 0.92rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
